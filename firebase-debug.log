@@ -1,0 +1,40 @@
+[debug] [2024-09-23T03:44:12.687Z] ----------------------------------------------------------------------
+[debug] [2024-09-23T03:44:12.689Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MARCO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-23T03:44:12.690Z] CLI Version:   13.18.0
+[debug] [2024-09-23T03:44:12.690Z] Platform:      win32
+[debug] [2024-09-23T03:44:12.690Z] Node Version:  v20.17.0
+[debug] [2024-09-23T03:44:12.690Z] Time:          Sun Sep 22 2024 22:44:12 GMT-0500 (hora estándar de Perú)
+[debug] [2024-09-23T03:44:12.690Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-23T03:44:12.753Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-23T03:44:12.754Z] > authorizing via signed-in user (76939288@iestpic.edu.pe)
+[debug] [2024-09-23T03:44:12.754Z] [iam] checking project flowers-6d556 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-23T03:44:12.756Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/flowers-6d556:testIamPermissions [none]
+[debug] [2024-09-23T03:44:12.756Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/flowers-6d556:testIamPermissions x-goog-quota-user=projects/flowers-6d556
+[debug] [2024-09-23T03:44:12.756Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flowers-6d556:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-23T03:44:14.036Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/flowers-6d556:testIamPermissions 200
+[debug] [2024-09-23T03:44:14.037Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flowers-6d556:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-23T03:44:14.037Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/flowers-6d556 [none]
+[debug] [2024-09-23T03:44:14.660Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/flowers-6d556 200
+[debug] [2024-09-23T03:44:14.660Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/flowers-6d556 {"projectId":"flowers-6d556","projectNumber":"847919475366","displayName":"flowers","name":"projects/flowers-6d556","resources":{"hostingSite":"flowers-6d556"},"state":"ACTIVE","etag":"1_0dff27db-55d2-40a2-81f0-e46e2fe708da"}
+[info] 
+[info] === Deploying to 'flowers-6d556'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-09-23T03:44:14.665Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/flowers-6d556/versions [none]
+[debug] [2024-09-23T03:44:14.665Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/flowers-6d556/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-09-23T03:44:16.261Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/flowers-6d556/versions 200
+[debug] [2024-09-23T03:44:16.261Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/flowers-6d556/versions {"name":"projects/847919475366/sites/flowers-6d556/versions/18f11fa886688acc","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[flowers-6d556]: beginning deploy... 
+[info] i  hosting[flowers-6d556]: found 180457 files in /. 
+[debug] [2024-09-23T03:44:41.956Z] [hosting] uploading with 200 concurrency
+[debug] [2024-09-23T03:44:41.957Z] [hosting] hash cache [] not populated
+[debug] [2024-09-23T03:44:42.006Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-23T03:44:42.007Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-23T03:44:42.008Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
